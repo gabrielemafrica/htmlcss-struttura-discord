@@ -27,7 +27,7 @@ header{
     align-items: center;
 }
 
-#logo{
+.logo{
     background-color: white;
     border: solid 1px black;
     height: 50px;
@@ -75,13 +75,40 @@ header section > p{
     
 }
 
+    /* footer corpo */
+
+footer{
+    background-color: rgb(34, 39, 42);
+    width: 100%;
+}
+
+footer #footer-nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid darkgray;
+    margin-bottom: 10px;
+}
+
+.footer-menu{
+    background-color: darkgray;
+    border: 1px solid black;
+    height: 200px;
+    width: 80px;
+    margin: 30px 0;
+}
+
+ footer #bottom-footer{
+    display: flex;
+    justify-content: space-between;
+ }
 
 /* debug */
 
 
-
+/*
 #center-box{
     height: 500px;
     background-color: yellowgreen;
     border: solid 1px black;
 }
+*/
