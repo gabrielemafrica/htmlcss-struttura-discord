@@ -10,6 +10,7 @@ header{
     width: 100%;
     height: 500px;
     color: white;
+    padding-top: 20px;
 }
 h1{
     margin-bottom: 40px;
@@ -19,53 +20,49 @@ p{
     line-height: 150%;
 }
 
+button{
+    height: 50px;
+    min-width: 100px;
+    border-radius: 50px;  
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* container centratore */
 
 .center-box{
-    /* padding-top: 20px; */
     width: 80%;
     margin: auto;
 }
     /* header menu*/
 
-#head-nav{
-    display: flex;
-    justify-content: space-between;
+.center{
     align-items: center;
 }
 
 .logo{
     background-color: white;
-    border: solid 1px black;
     height: 50px;
     width: 100px;
 }
 
-#head-menu{
+.head-menu{
     list-style: none;
-    display: flex;
-    justify-content: space-between;
     flex-basis: 400px;
 }
 
-header ul > li > a{
-    font-style: unset;
-} 
 
-button{
-    height: 50px;
-    min-width: 100px;
-    border-radius: 50px;
-    
-}
+
 
     /* header corpo */
 
 header section{
     margin: 100px 150px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -74,17 +71,10 @@ header section > p{
     margin-bottom: 15px;
 }
 
-#head-button{
-    display: flex;
-    justify-content: space-between;
-    
-}
 
     /* main corpo */
 
-main .main-section{
-    display: flex;
-    justify-content: space-between;
+main > section {
     padding: 60px 0;
 }
 main section img{
@@ -97,17 +87,16 @@ main section .testo-section{
     width: 45%;
 }
 
-main > section:nth-child(2) .main-section{
+main > section:nth-child(2) .flex.center-box{
     flex-direction: row-reverse;
 }
 
-
-main .main-section.bottom{
+main > section:last-child .flex.center-box{
     flex-direction: column-reverse;
-    align-items: center;
     text-align: center;
     min-height: 600px;
 }
+
 
 main > section:nth-child(even){
     background-color: rgb(245, 245, 245);
@@ -121,9 +110,7 @@ footer{
     width: 100%;
 }
 
-footer #footer-nav{
-    display: flex;
-    justify-content: space-between;
+footer nav.flex{
     border-bottom: 2px solid darkgray;
     margin-bottom: 10px;
 }
@@ -136,9 +123,7 @@ footer #footer-nav{
     margin: 30px 0;
 }
 
- footer #bottom-footer{
-    display: flex;
-    justify-content: space-between;
+ footer div.flex{
     padding-bottom: 30px;
  }
 
