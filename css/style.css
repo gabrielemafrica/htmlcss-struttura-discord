@@ -21,7 +21,7 @@ p{
 
 /* container centratore */
 
-#center-box{
+.center-box{
     padding-top: 20px;
     width: 80%;
     margin: auto;
@@ -87,29 +87,30 @@ main .main-section{
     justify-content: space-between;
     padding: 60px 0;
 }
-main section > img{
+main section img{
     height: 200px;
     width: 45%;
     background-color: rgb(34, 39, 42);
 }
 
-main section > div{
+main section .testo-section{
     width: 45%;
 }
 
-main section:nth-child(2){
+main > section:nth-child(2) .main-section{
     flex-direction: row-reverse;
 }
 
-main section:last-child{
+
+main .main-section.bottom{
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     min-height: 600px;
 }
 
-main section:nth-child(even){
-    background-color: lightgrey;
+main > section:nth-child(even){
+    background-color: rgb(245, 245, 245);
 }
 
 
@@ -138,6 +139,7 @@ footer #footer-nav{
  footer #bottom-footer{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
  }
 
 /* debug */
