@@ -1,0 +1,87 @@
+/* regole genrali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lightblue;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+/* container centratore */
+
+#center-box{
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+    /* header menu*/
+
+#head-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    background-color: white;
+    border: solid 1px black;
+    height: 50px;
+    width: 100px;
+}
+
+#head-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 400px;
+}
+
+header ul > li > a{
+    font-style: unset;
+} 
+
+button{
+    height: 50px;
+    min-width: 100px;
+    border-radius: 50px;
+    
+}
+
+    /* header corpo */
+
+header section{
+    margin: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header section > h1{
+    margin-bottom: 30px;
+}
+header section > p{
+    margin-bottom: 15px;
+}
+
+#head-button{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+/* debug */
+
+
+
+#center-box{
+    height: 500px;
+    background-color: yellowgreen;
+    border: solid 1px black;
+}
