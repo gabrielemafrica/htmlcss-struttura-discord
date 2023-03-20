@@ -11,6 +11,13 @@ header{
     height: 500px;
     color: white;
 }
+h1{
+    margin-bottom: 40px;
+}
+
+p{
+    line-height: 150%;
+}
 
 /* container centratore */
 
@@ -62,9 +69,7 @@ header section{
     text-align: center;
 }
 
-header section > h1{
-    margin-bottom: 30px;
-}
+
 header section > p{
     margin-bottom: 15px;
 }
@@ -74,6 +79,39 @@ header section > p{
     justify-content: space-between;
     
 }
+
+    /* main corpo */
+
+main .main-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+main section > img{
+    height: 200px;
+    width: 45%;
+    background-color: rgb(34, 39, 42);
+}
+
+main section > div{
+    width: 45%;
+}
+
+main section:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+main section:last-child{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    min-height: 600px;
+}
+
+main section:nth-child(even){
+    background-color: lightgrey;
+}
+
 
     /* footer corpo */
 
